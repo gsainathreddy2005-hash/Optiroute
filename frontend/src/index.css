@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-navy-950 text-slate-100 font-sans transition-colors duration-200;
+  }
+}
+
+/* Light Mode Overrides */
+html.light-mode body {
+  background-color: #f1f5f9 !important;
+  color: #0f172a !important;
+}
+
+html.light-mode header {
+  background-color: rgba(255, 255, 255, 0.9) !important;
+  border-color: #cbd5e1 !important;
+  color: #0f172a !important;
+}
+
+html.light-mode aside {
+  background-color: #ffffff !important;
+  border-color: #cbd5e1 !important;
+}
+
+html.light-mode .bg-navy-950,
+html.light-mode .bg-navy-900,
+html.light-mode .bg-navy-900\/80,
+html.light-mode .bg-navy-900\/60 {
+  background-color: #ffffff !important;
+  border-color: #e2e8f0 !important;
+  color: #0f172a !important;
+}
+
+html.light-mode .bg-navy-950\/80,
+html.light-mode .bg-navy-800,
+html.light-mode .bg-navy-800\/80 {
+  background-color: #f8fafc !important;
+  border-color: #cbd5e1 !important;
+  color: #0f172a !important;
+}
+
+html.light-mode h1, 
+html.light-mode h2, 
+html.light-mode h3, 
+html.light-mode h4, 
+html.light-mode .text-white {
+  color: #0f172a !important;
+}
+
+html.light-mode .text-slate-400, 
+html.light-mode .text-slate-300 {
+  color: #475569 !important;
+}
+
+/* Custom scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0b0f19;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
